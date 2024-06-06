@@ -23,7 +23,7 @@ app.get('/health-news', async (req, res) => {
 
 app.get('/search-articles', (req, res) => {
     const query = req.query.title;
-    console.log('Query Title:', query); 
+    console.log('Query Title:', query);
     if (!query) {
         return res.status(400).json({ error: true, message: 'Title query parameter is required' });
     }
@@ -33,7 +33,17 @@ app.get('/search-articles', (req, res) => {
     if (filteredArticles.length === 0) {
         return res.status(404).json({ error: true, message: 'Article Not Found' });
     }
-    res.json({ error: false, message: 'success', data: filteredArticles[0] });
+
+    const result = {
+        total_count: filteredArticles.length,
+        incomplete_results: false,
+        items: filteredArticles.map(article => ({
+            title: article.title,
+            url: article.url
+        }))
+    };
+
+    res.json(result);
 });
 
 app.post('/search-articles', (req, res) => {
@@ -48,7 +58,17 @@ app.post('/search-articles', (req, res) => {
     if (filteredArticles.length === 0) {
         return res.status(404).json({ error: true, message: 'Article Not Found' });
     }
-    res.json({ error: false, message: 'success', data: filteredArticles[0] });
+
+    const result = {
+        total_count: filteredArticles.length,
+        incomplete_results: false,
+        items: filteredArticles.map(article => ({
+            title: article.title,
+            url: article.url
+        }))
+    };
+
+    res.json(result);
 });
 
 app.listen(PORT, () => {
