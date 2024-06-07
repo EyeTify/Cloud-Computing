@@ -7,6 +7,7 @@ const API_KEY = '7bc0c932b3fc4fd1a7071689733fd39d';
 
 let cachedNews = [];
 
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
