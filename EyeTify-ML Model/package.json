@@ -1,0 +1,23 @@
+{
+  "name": "eyetify-ml-model",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google-cloud/firestore": "^7.8.0",
+    "@google-cloud/storage": "^7.11.2",
+    "@tensorflow/tfjs-node": "^4.19.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.1",
+    "multer": "^1.4.5-lts.1",
+    "node-fetch": "^3.3.2",
+    "uuid": "^10.0.0"
+  }
+}
