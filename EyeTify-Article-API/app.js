@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get('/health-news', async (req, res) => {
     try {
-        const response = await axios.get(`https://newsapi.org/v2/everything?q=eye%20health&apiKey=${API_KEY}`);
+        const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=health&apiKey=${API_KEY}`);
         cachedEyeHealthNews = response.data.articles;
         res.json(cachedEyeHealthNews);
     } catch (error) {
