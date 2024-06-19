@@ -1,16 +1,22 @@
-# EyeTify - Cloud Computing
+# EyeTify - Cloud Computing ☁️
 
-## Introduction
+## 📑 Introduction
 
 EyeTify is an innovative application aimed at detecting early eye diseases using image processing and machine learning. This repository contains the cloud computing components of the EyeTify project, including APIs for authentication, news fetching, and machine learning model integration.
 
-## Features
+## 📚 Related Project Repositories
+|   Learning Paths      |                           Link                                  |
+| :-------------------: | :-------------------------------------------------------:       |
+| 🤖 Machine Learning   | [ML Repository](https://github.com/EyeTify/Machine-Learning)    |
+| 📱 Mobile Development | [MD Repository](https://github.com/EyeTify/Mobile-Development) |
+
+## 🔎 Features
 
 - **Authentication**: Secure user authentication using Firebase.
 - **News Fetching**: Fetch and display news articles from external providers.
 - **Machine Learning**: Analyze uploaded images for eye disease detection using a machine learning model.
 
-## APIs
+## 🔗 APIs
 
 ### Authentication API
 
@@ -34,7 +40,7 @@ EyeTify is an innovative application aimed at detecting early eye diseases using
 - **Methods**:
   - `POST /image`: Analyze the uploaded image for eye disease detection.
 
-## Architecture
+## 🔧 Architecture
 
 ![EyeTify Architecture 5](https://github.com/EyeTify/Cloud-Computing/assets/154324482/07a0e7e7-997c-447d-946c-1d3938fa7c52)
 
