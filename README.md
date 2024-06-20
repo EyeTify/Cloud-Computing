@@ -64,5 +64,3 @@ EyeTify is an innovative application aimed at detecting early eye diseases using
 4. **Access Control and Billing**
    - **Cloud IAM**: Manage user identities and access to secure access to cloud resources.
    - **Cloud Billing**: Manage and monitor costs for using Google Cloud services.
-
-We follows a microservices architecture, where each API is deployed independently to ensure modularity and scalability.
