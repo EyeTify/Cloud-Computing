@@ -20,7 +20,7 @@ EyeTify is an innovative application aimed at detecting early eye diseases using
 
 ### Authentication API
 
-- **Endpoint**: `https://asia-southeast2-eyetifycapstone.cloudfunctions.net/app/api`
+- **Base URL/Endpoint**: `https://asia-southeast2-eyetifycapstone.cloudfunctions.net/app/api`
 - **Methods**:
   - `POST /register`: Register a new user.
   - `POST /login`: Authenticate an existing user.
@@ -29,14 +29,14 @@ EyeTify is an innovative application aimed at detecting early eye diseases using
 
 ### News Fetching API
 
-- **Base URL**: `https://articles-features-api-kodyfcb2bq-et.a.run.app`
+- **Base URL/Endpoint**: `https://articles-features-api-kodyfcb2bq-et.a.run.app`
 - **Methods**:
   - `GET /health-news`: Fetch the latest news articles.
   - `GET /search-articles`: Search for news articles based on keywords.
 
 ### Machine Learning API
 
-- **Endpoint**: `https://ml-model-api-kodyfcb2bq-et.a.run.app/api/upload-analyze`
+- **Base URL/Endpoint**: `https://ml-model-api-kodyfcb2bq-et.a.run.app/api/upload-analyze`
 - **Methods**:
   - `POST /image`: Analyze the uploaded image for eye disease detection.
 
